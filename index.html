@@ -5,13 +5,28 @@
 	<img src="./img/ipad-piano.jpg" class="img-main" label="Example piano with iPad setup"/>
 </div>
 
+<h2>Contents</h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#bluetooth-setup">Bluetooth Setup</a></li>
+<li><a href="#wired-setup">Wired Setup</a></li>
+<li><a href="#usbc-devices">USB C Devices</a></li>
+<li><a href="#lightning-devices">Lightning Devices</a></li>
+<li><a href="#audio-out">Audio Out</a></li>
+<li><a href="#piano-apps">Piano Apps</a></li>
+<li><a href="#velocity">Velocity/Dynamics</a></li>
+<li><a href="#advanced-midi">Advanced MIDI</a></li>
+<li><a href="#more-tips">More Tips</a></li>
+</ul>
+<hr>
+<h2><a name="introduction">Introduction</a></h2>
 <p>iPhones and iPads are surprisingly powerful add-ons for your digital piano or other MIDI keyboards. With an iPad and a few apps, a $100 MIDI controller or a $500 entry-level piano can be upgraded to have many of the features and sounds of the most expensive stage pianos and synthesizers have, not to mention many additional capabilities (like running DAWs, having large storage, and a constantly growing ecosystem of apps) that they do not.</p>
 <p>And unlike a computer, an iPad or an iPhone makes a perfect fit for your piano&#39;s music stand.</p>
 <p>There is a lot of info out there, mostly in the form of videos, that describe all kinds of things about music production on iOS. I wanted to create a one-stop page specifically for pianists getting started using a keyboard and iOS music apps.</p>
-<h2>Easy (but possibly laggy) Bluetooth setup</h2>
+<h2><a name="bluetooth-setup">Easy (but possibly laggy) Bluetooth setup</a></h2>
 <p>If your digital piano supports bluetooth MIDI, and you have bluetooth headphones/speakers, this may be the easiest solution, without needing any extra hardware. The downside to this setup is often undesirable or unplayable latency, as most digital pianos are not equipped with modern, low latency Bluetooth MIDI. You can give this a try, and if you don&#39;t notice any lagging between hitting keys and hearing the sounds, then you can skip ahead to the Piano Apps section.</p>
 <p>Otherwise, keep reading for a wired setup with reliably low latency...</p>
-<h2>Wired Connection Setup</h2>
+<h2><a name="wired-setup">Wired Connection Setup</a></h2>
 <p>Things you will need:</p>
 <ul>
 <li>Headphones (studio recommended)</li>
@@ -29,21 +44,21 @@
 <p>Decent studio headphones can probably be found for around $100 or less, as can base model monitor speakers. The remaining cables, hub, DAC should all be in the $10-50 range.</p>
 <p>An audio interface, if you need it, can be in the $100-1000+ range, depending on the number of inputs and features.</p>
 <p>Depending on your iOS device, you’ll need slightly different items.</p>
-<h3>USB C Devices</h3>
+<h3><a name="usbc-devices">USB C Devices</a></h3>
 <p>For USB C devices (most current iPads) you will just need a USB C hub - ideally a powered hub or with power pass-through so you can keep your iPad charged. Some come with headphone jacks, but other USB audio out solutions exist as well.</p>
 <div class="center">
 	<img src="./img/usb-c-hub.jpg" class="img-md" label="Example USB C hub"/>
 </div>
 
 <p><a href="https://www.macworld.com/article/349019/the-best-usb-c-hubs-for-the-ipad-pro-and-ipad-air.html">Here&#39;s a list of recommended USB C hubs from MacWorld (May 2024).</a></p>
-<h3>Lightning Devices</h3>
+<h3><a name="lightning-devices"></a>Lightning Devices</h3>
 <p>For Lightning devices (phones, classic iPad) you will need a Lightning-USB adapter. Apple’s own adapters are generally regarded as the most reliable. I recommend the <a href="https://www.apple.com/us/shop/product/MX5J3AM/A/lightning-to-usb-3-camera-adapter">adapter with the lighting power socket</a>, so you can keep your device charged.</p>
 <div class="center">
 	<img src="./img/lightning-usb-pwr.jpg" class="img-md" label="Apple Lightning to USB 3 Camera Adapter"/>
 </div>
 
 <p>Since your iOS device is being powered by the lightning pass-through, you don&#39;t necessarily need a powered hub if your piano keyboard has its own power. If your keyboard needs USB power, or you add other devices that need USB power, then you will want a powered hub.</p>
-<h3>Audio Out</h3>
+<h3><a name="audio-out">Audio Out</a></h3>
 <p>Classic iPad models up until the 9th edition have a headphone jack. In this case you can connect headphones/speakers directly and don&#39;t need any audio adapter. With just the Lightning-USB adapter, you can connect one MIDI keyboard and play.</p>
 <p>For every other device, you’ll need a USB hub and a DAC (Digitial Audio Converter) of some kind, which can take several forms.</p>
 <p>Many USB C hubs come with an audio jack, which nicely solves the issue without additional hardware.</p>
@@ -54,7 +69,7 @@
 
 <p>Beyond that, if you want to get audio in to your iOS device (eg. singing, guitar), you’ll want to look into audio interfaces, which provide high-quality, multi-channel audio out and in.</p>
 <hr>
-<h2>Piano Apps</h2>
+<h2><a name="piano-apps">Piano Apps</a></h2>
 <div class="imgs-row">
 	<img src="./img/garageband-icon.jpg" alt="GarageBand"/>
 	<img src="./img/pianoteq-icon.jpg" alt="Pianoteq"/>
@@ -82,10 +97,10 @@
 <p>You can load standalone Piano apps (most of which support Apple&#39;s AudioUnit plugin format) into an AUM session, which will remember whatever settings you were using. It provides a more configurable metronome, always-available play/stop controls, and your keyboard will always play through; you don&#39;t need to be on a certain screen in the app. You can add any number of additional tracks (eg., a drum machine, acoustic bass instrument) to play along to instead of just a plain metronome.</p>
 <p>The way I look at it is that AUM is great for practicing, experimenting, jamming, while Garage Band excels at recording a track after you have a practiced song. (Keep in mind you can use the same 3rd party piano apps in Garage Band as in AUM.)</p>
 <p>That said, a MIDI recorder app like <a href="https://apps.apple.com/us/app/helium-auv3-midi-sequencer/id1563152523">Helium MIDI Sequencer</a> can capture a piano performance just as well as Garage Band, and it will let you export MIDI and see/edit MIDI CC signals (like sustain pedal.)</p>
-<h2>Velocity/Dynamics</h2>
-<p>One thing to watch out for when using software pianos with a digital piano as a controller is that the velocity curve of your built-in digital piano is presumably matched to the key action of the hardware and its own internal sounds, whereas the velocity settings of software pianos often need to be adjusted to the keyboard you&#39;re playing.</p>
-<p>Fully-weighted keyboards might limit you from hitting the loudest possible MIDI velocities by default. Some pianos will include their own velocity editing controls. Many home pianos provide extended configuration by way of iPad apps, and will allow you to configure velocity this way. Using an app like Pianoteq at the same time will show you velocity output (the free version includes this feature.) This will allow you to see if your digital piano allows you to play all the way up to maximum velocity while you adjust it in your hardware&#39;s configuration app.</p>
-<p>Note that setting your piano&#39;s velocity to a range that works for your favourite iOS piano apps may end up playing too loudly when using your digital piano&#39;s own internal sounds. Personally I never use the built-in sounds anymore, and use it only as a MIDI controller for iPad. If you switch back and forth however, this may be an irritation, in which case you might be better off accommodating your piano&#39;s velocity in the piano apps that you&#39;re playing.</p>
+<h2><a name="velocity">Velocity/Dynamics</a></h2>
+<p>One thing to watch out for when using software pianos with a digital piano as a controller is that the velocity curve and range of your built-in digital piano is presumably matched to the key action of the hardware and its own internal sounds, whereas the velocity settings of software pianos often need to be adjusted to the keyboard that you&#39;re playing.</p>
+<p>Fully-weighted keyboards might limit you from hitting the loudest possible MIDI velocities by default. Some pianos will include their own velocity editing controls. Many home pianos provide extended configuration by way of iPad apps, and will allow you to configure velocity this way (for example, Roland&#39;s <a href="https://apps.apple.com/us/app/piano-designer/id901766931">Piano Designer</a> app). Using an app like Pianoteq at the same time will show you velocity output (the free version includes this feature.) This will allow you to see if your digital piano allows you to play all the way up to (or close to) the maximum velocity while you adjust it in your hardware&#39;s configuration app.</p>
+<p>Note that setting your piano&#39;s velocity to a range that works for your favourite iOS piano apps may end up playing too loudly when using your digital piano&#39;s own internal sounds. Personally I never use the built-in sounds anymore, and use it only as a MIDI controller for iPad. If you switch back and forth however, this may be an irritation, in which case you might be better off accommodating your piano&#39;s default velocity in the piano apps that you&#39;re playing.</p>
 <p>If you can&#39;t or don&#39;t want to adjust your digital piano&#39;s velocity and it&#39;s not giving you the full velocity range, then you&#39;ll probably prefer a piano app that allows you to &quot;scale up&quot; the velocity with its controls. My own piano tops out under 100 (out of a possible 127) by default when playing it about as loudly as I dare.</p>
 <p>In my opinion, the best piano app, when it comes to velocity adjustments, is Pianoteq which has a full curve editor with the most control.</p>
 <div class="center">
@@ -98,20 +113,20 @@
 </div>
 
 <p>Most other iOS apps unfortunately provide more limited velocity curve controls; they allow you to shape the curve, but assume your keyboard is capable of outputting the full 0-127 range.</p>
-<h3>Advanced MIDI</h3>
+<h3><a name="advanced-midi">Advanced MIDI</a></h3>
 <p>If you want to see exactly what MIDI velocity values (or any other MIDI data) coming from your keyboard looks like, the awesome free app called <a href="https://apps.apple.com/us/app/showmidi/id6472608850">ShowMIDI</a> will be extremely helpful. Pianoteq also includes a velocity visualizer with its free version.</p>
 <p>If you&#39;re using a piano app that doesn&#39;t provide adequate velocity controls, there may be MIDI AudioUnits that can help. For example, <a href="https://audeonic.com/streambyter/">StreamByter</a> and using <a href="https://github.com/spacejack/streambyter-velocity-scale">this script</a> you can scale up (or down) note velocities by whatever factor you set.</p>
-<h2>More Tips</h2>
+<h2><a name="more-tips">More Tips</a></h2>
 <p>If you’re using external speakers to hear yourself play and you’re using a digital piano with speakers, try playing both the piano and iOS audio at the same time. This can give you an even bigger piano sound.</p>
-<h2>What about Android?</h2>
+<h3>What about Android?</h3>
 <p>I have not covered Android because I’m not familiar with its music ecosystem. Historically, Android devices have had significant issues with audio latency (though this has been improving) and did not attract as many developers as iOS.</p>
-<h2>Any Other Options?</h2>
+<h3>Any Other Options?</h3>
 <p>Small computers, touchscreens are constantly being improved, and the open-source music software scene continues to evolve. There are lots of options to look at, and there is an appeal to breaking free of proprietary ecosystems. But you&#39;ll need to spend a lot of time figuring out hardware and software.</p>
-<h2>Pitfalls for Pianists</h2>
+<h3>Pitfalls for Pianists</h3>
 <p>As this is supposed to be a helpful article, I feel I should point out some potential downsides to the keyboard+phone/tablet approach for students.</p>
 <p>One thing I think you’ll need to do to make this setup work for you is to treat the keyboard and the phone/tablet as a combined, dedicated instrument. For example, I bought an iPad specifically for my digital piano, and it says on the music stand of the piano, connected to the hub. It’s not connected to any social media and receives no calls or notifications. If you treat the iPad as a general purpose device that’s being used for chatting, gaming, and filling up the storage space with entertainment apps, and leaving it uncharged, and if this makes it inconvenient to sit down and start playing right away, then it can easily become detrimental to your piano playing.</p>
 <div class="sig">
 	<hr/>
-	<p>Last edited Dec 2 2024 © Mike Linkovich</p>
+	<p>Last edited Dec 7 2024 © Mike Linkovich</p>
 </div>
 </div></div></body></html>
